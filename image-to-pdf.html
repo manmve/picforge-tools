@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Image to PDF</title>
+  <link rel="stylesheet" href="assets/styles.css" />
+  <script defer src="assets/script.js"></script>
+</head>
+<body>
+  <header><h1>🖼️ Image to PDF</h1></header>
+  <main>
+    <input type="file" id="imageInput" multiple accept="image/*" />
+    <button onclick="convertToPDF()">Convert</button>
+    <div id="loader" class="hidden"></div>
+    <p id="statusText"></p>
+  </main>
+  <footer>
+    <p>Happy with the output? Feel generous & donate to <strong>Your Tool Development Kitty</strong> (YTDK).<br/>
+    💸 GPay / UPI / PayPal — Pences, Cents, Euros, Rupees, all graciously accepted 🙏</p>
+  </footer>
+</body>
+</html>
