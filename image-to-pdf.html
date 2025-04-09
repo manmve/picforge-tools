@@ -12,6 +12,11 @@
   <main>
     <input type="file" id="imageInput" multiple accept="image/*" />
     <button onclick="convertToPDF()">Convert</button>
+    <!-- Spinner Loader Section -->
+<div id="loader" style="display:none; text-align:center; margin-top:20px;">
+  <img src="assets/spinner.gif" alt="Loading..." style="width:50px;">
+  <p>Processing your file...</p>
+</div>
     <div id="loader" class="hidden"></div>
     <p id="statusText"></p>
   </main>
