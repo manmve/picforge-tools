@@ -1,0 +1,54 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  background: #0f172a;
+  color: #e0f2fe;
+}
+header, footer {
+  text-align: center;
+  padding: 1rem;
+  background: #1e293b;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  padding: 1rem;
+}
+.tool-box {
+  background: #334155;
+  border-radius: 10px;
+  padding: 1rem;
+  text-align: center;
+  text-decoration: none;
+  color: #e0f2fe;
+  transition: transform 0.2s;
+}
+.tool-box:hover {
+  transform: scale(1.05);
+  background: #3b82f6;
+}
+button {
+  padding: 0.5rem 1rem;
+  background: #3b82f6;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+#loader {
+  margin: 20px auto;
+  border: 8px solid #f3f3f3;
+  border-top: 8px solid #3b82f6;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+}
+.hidden {
+  display: none;
+}
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
